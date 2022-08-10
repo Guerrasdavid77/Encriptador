@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="img-icono-alura">
+            <img src="./img/Vector.svg" alt="icono-alura">
+        </div>
+        <div class="main-container">
+            <div class="icon">
+                <a href="https://github.com/Guerrasdavid77" target="_blank">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+    
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/david-guerra-bb9b92167/" target="_blank">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-linkedin-square' ></i>
+                </a>
+            </div>
+    
+            <div class="icon">
+                <a href="#"></a>
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+                </svg>
+                <i class='bx bxl-whatsapp' ></i>
+            </div>
+    
+            <div class="icon">
+                <a href="https://twitter.com/Guerrasdavid77" target="_blank">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <textarea id="mensaje" class="mensaje" placeholder="Ingrese el texto aquí..."></textarea>
+        <p class="text1"><img src="./img/alert.svg" alt="alert"> Solo letras minúsculas y sin acentos</p>
+        <button id="input" onclick="encriptar()">Encriptar</button>
+        <button id="input2" onclick="desencriptar()">Desencriptar</button>
+        
+        <div class="text-recolec">
+            <img id="muñeco" src="./img/Muñeco.png" alt="">
+            <p id="text-ocult1" class="text-ocult1">Ningún mensaje fue encontrado</p>
+            <p id="text-ocult2" class="text-ocult2">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button id="buttoncopy" class="buttoncopy" onclick="buttonCopy()">Copiar</button>
+        </div>
+    </main>
+
+    <footer>    
+        <div class="david">
+            <p>David Guerra</p>
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
